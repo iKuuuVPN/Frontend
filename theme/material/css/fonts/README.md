@@ -1,7 +1,7 @@
 The recommended way to use the Material Icons font is by linking to the web font hosted on Google Fonts:
 
 ```html
-<link href="https://fonts.font.im/icon?family=Material+Icons"
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 ```
 
