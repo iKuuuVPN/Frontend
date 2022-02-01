@@ -3364,7 +3364,7 @@
 
     // Emoji graphics files url path
     editormd.emoji     = {
-        path  : "https://jsd.root.moe/npm/emoji-cst@1.0.0/graphics/emojis/",
+        path  : "https://xcdn.loli.top/npm/emoji-cst@1.0.0/graphics/emojis/",
         ext   : ".png"
     };
 
