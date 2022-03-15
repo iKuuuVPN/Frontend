@@ -536,7 +536,7 @@
       url: "/user/ticket",
       dataType: "json",
       data: {
-        content: $("#ticket-content").val(),
+        content: $("#ticket-content").val().replace(/\r\n|\r|\n/g,"<br />"),
         markdown: $("#ticket-content").val(),
         title: $("#title").val()
       },
@@ -586,8 +586,8 @@
       url: "/user/ticket/" + id,
       dataType: "json",
       data: {
-        content: $("#ticket-content").val(),
-        markdown: '',
+        content: $("#ticket-content").val().replace(/\r\n|\r|\n/g,"<br />"),
+        markdown: $("#ticket-content").val(),
         title: '',
         status: 1
       },
