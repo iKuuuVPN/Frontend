@@ -1509,7 +1509,8 @@
         'data': {
           'price': price,
           'type': type,
-          'shopid': shopid
+          'shopid': shopid,
+          'origin': document.location.origin
         },
         'dataType': 'json',
         'type': "POST",
