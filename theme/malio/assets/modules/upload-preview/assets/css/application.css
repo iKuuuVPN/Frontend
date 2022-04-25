@@ -1,5 +1,5 @@
-@import url(http://fonts.font.im/css?family=Roboto:400,300);
-@import url(http://fonts.font.im/css?family=Source+Code+Pro:400);
+@import url('/gh/iKuuuVPN/Frontend@master/theme/malio/css/fontim/Roboto.css');
+@import url('/gh/iKuuuVPN/Frontend@master/theme/malio/css/fontim/SourceCodePro.css');
 * {
   border: 0;
   margin: 0;

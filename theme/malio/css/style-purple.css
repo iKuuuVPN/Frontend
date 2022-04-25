@@ -53,7 +53,7 @@
 /* 2. Mixin */
 /* 3. Bootstrap Override */
 /* 3.1 Misc */
-@import url("//fonts.font.im/css?family=Nunito:400,600,700,800");
+@import url("/gh/iKuuuVPN/Frontend@master/theme/malio/css/fontim/Nunito.css");
 .btn:focus,
 .btn:active,
 .btn:active:focus,
