@@ -1864,7 +1864,7 @@
     if (paymentSystem == 'custom') {
       customPay(payment, price, shopid);
     }
-    tid = setTimeout(f, 1000);
+    let tid = setTimeout(f, 1000);
   
     function f() {
       $.ajax({
@@ -1878,14 +1878,16 @@
             if (parseFloat(data.money) >= parseFloat(confirmShop.price)) {
               clearTimeout(tid);
               buyConfirm(confirmShop.id);
+              return;
             }
           }
+          tid = setTimeout(f, 1000); //循环调用触发setTimeout
         },
         error: function (jqXHR) {
           console.log(jqXHR);
+          tid = setTimeout(f, 1000); //循环调用触发setTimeout
         }
       });
-      tid = setTimeout(f, 1000); //循环调用触发setTimeout
     }
   }
   
