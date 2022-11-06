@@ -287,7 +287,7 @@
         },
         success: function (data) {
           if (data.ret) {
-            swal({
+            Swal.fire({
               type: 'success',
               title: i18n['successful-purchase'],
               onClose: () => {
@@ -329,7 +329,7 @@
         },
         success: function (data) {
           if (data.ret) {
-            swal({
+            Swal.fire({
               type: 'success',
               title: i18n['customize-inivitation-link-successfully'],
               onClose: () => {
@@ -375,7 +375,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: data.msg,
             showCloseButton: true,
@@ -412,7 +412,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['2fa-has-been-disabled'],
             showCloseButton: true,
@@ -451,7 +451,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['password-changed-successfully'],
             showCloseButton: true,
@@ -490,7 +490,7 @@
       success: function (data) {
         console.log(data.ret);
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['your-account-has-been-deleted'],
             showCloseButton: true,
@@ -542,7 +542,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['submitted'],
             onClose: () => {
@@ -593,7 +593,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['submitted'],
             onClose: () => {
@@ -633,7 +633,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['this-ticket-has-been-closed'],
             onClose: () => {
@@ -770,7 +770,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['top-up-successful'],
             onClose: () => {
@@ -799,7 +799,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: i18n['disabled'],
             text: data.msg,
@@ -949,7 +949,7 @@
         success: function (data) {
           if (data.result) {
             clearTimeout(tid);
-            swal({
+            Swal.fire({
               type: 'success',
               title: '充值成功',
               onClose: () => {
@@ -1186,7 +1186,7 @@
         success: function (data) {
           if (data.result) {
             clearTimeout(tid);
-            swal({
+            Swal.fire({
               type: 'success',
               title: '充值成功',
               onClose: () => {
@@ -1275,7 +1275,7 @@
         success: function (data) {
           if (data.result) {
             clearTimeout(tid);
-            swal({
+            Swal.fire({
               type: 'success',
               title: '充值成功',
               onClose: () => {
@@ -1381,7 +1381,7 @@
         success: function (data) {
           if (data.result) {
             clearTimeout(tid);
-            swal({
+            Swal.fire({
               type: 'success',
               title: '充值成功',
               onClose: () => {
@@ -1798,7 +1798,7 @@
       },
       success: function (data) {
         if (data.ret) {
-          swal({
+          Swal.fire({
             type: 'success',
             title: '购买成功',
             onClose: () => {
@@ -2986,7 +2986,7 @@
       if (options.spinner == false) {
         me.addClass('remove-spinner');
       }
-  
+
       if (options.dismiss == true) {
         var btn_dismiss = '<a class="btn btn-danger card-progress-dismiss">' + options.dismissText + '</a>';
         btn_dismiss = $(btn_dismiss).off('click').on('click', function () {
