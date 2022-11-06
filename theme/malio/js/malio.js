@@ -586,8 +586,8 @@ function replyTicket(id) {
     url: "/user/ticket/" + id,
     dataType: "json",
     data: {
-      content: $("#ticket-content").val().replace(/\r\n|\r|\n/g, "<br />"),
-      markdown: $("#ticket-content").val(),
+      content: $("#ticket-content").val().replace(/\r\n|\r|\n/g, "<br />").replace(/\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g, ''),
+      markdown: $("#ticket-content").val().replace(/\uD83C[\uDF00-\uDFFF]|\uD83D[\uDC00-\uDE4F]/g, ''),
       title: '',
       status: 1
     },
