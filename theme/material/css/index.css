@@ -289,8 +289,8 @@ input.checkbox,
 }
 
 .auth-submit:hover,
-.auth-submit:focus,
-    {
+.auth-submit:focus
+{
     background-color: #d6d6d6;
     border-color: #d6d6d6;
 }
