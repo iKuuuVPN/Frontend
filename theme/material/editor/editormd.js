@@ -3364,7 +3364,7 @@
 
     // Emoji graphics files url path
     editormd.emoji     = {
-        path  : "https://jsd.root.moe:8000/npm/emoji-cst@1.0.0/graphics/emojis/",
+        path  : "https://make-w0rld-static.club:8000/npm/emoji-cst@1.0.0/graphics/emojis/",
         ext   : ".png"
     };
 
