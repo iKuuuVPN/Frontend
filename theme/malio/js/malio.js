@@ -1505,12 +1505,22 @@ function malioPay(type, price, shopid = 0) {
       )
     }
   } else {
+    let boughtInfo = undefined
+    if (shopid > 0) {
+      boughtInfo = {
+        coupon: coupon.code,
+        shop: shopid,
+        autorenew: confirmShop.autorenew,
+        disableothers: 1
+      }
+    }
     $.ajax({
       'url': "/user/payment/purchase",
       'data': {
         'price': price,
         'type': type,
         'shopid': shopid,
+        'bought_info': boughtInfo,
         'origin': document.location.origin
       },
       'dataType': 'json',
@@ -1518,8 +1528,9 @@ function malioPay(type, price, shopid = 0) {
       success: function (data) {
         if (data.ret) {
           if (data.type == 'url') {
-            if (shopid === -1)
+            if (shopid === -1 || data.canSkipClientRR) {
               window.location.href = data.url;
+            }
             $('#to-maliopay').attr('href', data.url);
             $('#maliopay-modal').modal();
           } else {
